@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Báo Giá Luyện Thi - Hiếu Nghĩa Visa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Topbar & Navbar Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="Trang Chủ.html" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="c:\Users\HIEU NGHIA PC\Downloads\a674a0a61cdf494c8e9aee4b9b27d997-free-removebg-preview.png" class="img-fluid" alt="">HiếuNghĩaVisa</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Trang Chủ.html" class="nav-item nav-link">Trang Chủ</a>
+                    <a href="Giới Thiệu.html" class="nav-item nav-link">Giới Thiệu</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Trang</span></a>
+                        <div class="dropdown-menu m-0">
+                            <a href="countries.html" class="dropdown-item">Các quốc gia</a>
+                            <a href="testimonial.html" class="dropdown-item">Lời chứng thực</a>
+                            <a href="training.html" class="dropdown-item">Đào tạo</a>
+                            <a href="404.html" class="dropdown-item">Trang 404</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                </div>
+                <a href="timkiem.html" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Tìm Kiếm</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Main Content Start -->
+    <div class="container my-5">
+        <h2 class="text-center text-secondary">Báo Giá Luyện Thi</h2>
+        <p class="text-center">Chúng tôi cung cấp dịch vụ luyện thi chất lượng cao với giá cả hợp lý. Vui lòng điền thông tin bên dưới để nhận báo giá chi tiết.</p>
+
+        <form id="quote-form" action="submit-quote.php" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Họ Tên</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Số Điện Thoại</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="course" class="form-label">Chọn Khóa Học</label>
+                <select class="form-select" id="course" name="course" required>
+                    <option value="" disabled selected>Chọn khóa học</option>
+                    <option value="IELTS">Luyện thi IELTS</option>
+                    <option value="TOEFL">Luyện thi TOEFL</option>
+                    <option value="PTE">Luyện thi PTE</option>
+                    <option value="OET">Huấn luyện OET</option>
+                </select>
+            </div>
+            <div id="price" class="mb-3" style="display: none;">
+                <label class="form-label">Giá Khóa Học</label>
+                <p id="course-price" class="text-success"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Gửi yêu cầu báo giá</button>
+        </form>
+
+        <div id="success-message" style="display:none; color: green; text-align: center;">
+            Cảm ơn bạn đã gửi yêu cầu. Chúng tôi sẽ liên hệ với bạn sớm!
+        </div>
+    </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Thông tin liên lạc</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> 12 Trịnh Đình Thảo, Hoà Thanh, Tân Phú, Hồ Chí Minh </a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> 0928644896</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> 00928644896</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Giờ mở cửa</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Thứ Hai - Thứ Sáu:</h6>
+                            <p class="text-white mb-0">09.00 sáng đến 07.00 tối</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Thứ Bảy:</h6>
+                            <p class="text-white mb-0">10.00 sáng đến 05.00 chiều</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Kì nghỉ:</h6>
+                            <p class="text-white mb-0">Cả ngày Chủ Nhật là ngày nghỉ của chúng tôi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Dịch vụ của chúng tôi</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i>Việc kinh doanh</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i>Sự đánh giá</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Di cư</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i>Học</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Tư vấn</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Công việc / Sự nghiệp</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Vị trí của chúng tôi</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1060263768687!2d106.61836081462759!3d10.777949162133308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752beec868a30d%3A0x5564591a7c10fb9f!2zMTIgxJHhu41jIFRyaW5oIERpbmggVGjhu4sgSG9àIMaw4gQ28gQ8SgUHLhu5EgU0xIT8SgIEPhu51nIEjhu6FpIFRy4bub!5e0!3m2!1sen!2s!4v1646147228951!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script>
+        // Hàm hiển thị giá khi chọn khóa học
+        $(document).ready(function () {
+            const coursePrices = {
+                IELTS: '2.000.000 VNĐ',
+                TOEFL: '1.800.000 VNĐ',
+                PTE: '2.200.000 VNĐ',
+                OET: '2.500.000 VNĐ'
+            };
+
+            $('#course').change(function () {
+                const selectedCourse = $(this).val();
+                if (selectedCourse) {
+                    $('#course-price').text(coursePrices[selectedCourse]);
+                    $('#price').show();
+                } else {
+                    $('#price').hide();
+                }
+            });
+
+            // Xử lý gửi yêu cầu báo giá
+            $('#quote-form').submit(function (event) {
+                event.preventDefault(); // Ngăn chặn hành vi gửi mặc định
+
+                // Gửi yêu cầu đến máy chủ (nơi xử lý dữ liệu)
+                // Ở đây bạn có thể thêm mã để gửi yêu cầu, ví dụ: sử dụng AJAX
+                $('#success-message').show(); // Hiển thị thông báo gửi thành công
+                $('#quote-form')[0].reset(); // Reset form sau khi gửi
+                $('#price').hide(); // Ẩn giá khóa học
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiếu Nghĩa Visa - Tìm kiếm</title>
+    <style>
+        /* Style cho toàn bộ trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            color: rgb(255, 0, 72);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        /* Thanh tìm kiếm */
+        .search-container {
+            margin-top: 50px;
+        }
+
+        .search-box {
+            width: 50%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #ff3366;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HiếuNghĩaVisa</h1>
+    </header>
+
+    <!-- Phần tìm kiếm -->
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Nhập từ khóa tìm kiếm...">
+        <button onclick="searchFunction()" class="search-button">Tìm kiếm</button>
+    </div>
+
+    <!-- Kết quả tìm kiếm -->
+    <div id="searchResults" style="margin-top: 20px;"></div>
+
+    <footer>
+        <p>© 2024 HiếuNghĩaVisa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Hàm xử lý tìm kiếm
+        function searchFunction() {
+            var keyword = document.getElementById("searchInput").value;
+            if (keyword) {
+                document.getElementById("searchResults").innerHTML = "Bạn đã tìm kiếm từ khóa: <b>" + keyword + "</b>";
+            } else {
+                document.getElementById("searchResults").innerHTML = "Vui lòng nhập từ khóa để tìm kiếm!";
+            }
+        }
+    </script>
+</body>
+</html>

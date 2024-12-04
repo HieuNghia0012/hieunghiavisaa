@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiếu Nghĩa Visa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-y: scroll; /* Cho phép cuộn dọc */
+        }
+        /* Header */
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header h1 {
+            color: #e63946;
+            margin: 0;
+            display: inline-block;
+        }
+        .nav-links {
+            display: inline-block;
+            margin-left: 50px;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header .actions {
+            float: right;
+            margin-right: 20px;
+        }
+        .header .actions button, .header .actions .search {
+            padding: 10px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .header .actions .search {
+            background-color: #f4f4f4;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        /* Main section */
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .country-card {
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .country-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .country-card h3 {
+            margin: 10px 0;
+            font-size: 1.4em;
+            color: #333;
+        }
+        .country-card p {
+            padding: 0 15px;
+            color: #555;
+            font-size: 1em;
+        }
+        .country-card ul {
+            text-align: left;
+            padding: 0 20px;
+            color: #555;
+        }
+        .country-card ul li {
+            margin-bottom: 8px;
+        }
+        .country-card .flag {
+            margin-top: -40px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: relative;
+        }
+        /* Button back to home */
+        .back-home {
+            text-align: center;
+            margin: 30px;
+        }
+        .back-home a {
+            padding: 15px 30px;
+            background-color: #e63946;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Hiếu Nghĩa Visa</h1>
+        <div class="nav-links">
+            <a href="Trang Chủ.html">Trang Chủ</a>
+            <a href="Giới Thiệu.html">Giới Thiệu</a>
+            <a href="">Trang</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <div class="actions">
+            <button class="search">🔍</button>
+            <button>Nhận báo giá</button>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <!-- South Korea -->
+        <div class="country-card">
+            <img src="img/hanquoc.jpg" alt="Hàn Quốc">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Hàn Quốc Flag">
+            <h3>Hàn Quốc</h3>
+            <p>Thủ tục visa Hàn Quốc đơn giản và nhanh chóng:</p>
+            <ul>
+                <li>Điền đơn xin visa trực tuyến.</li>
+                <li>Chuẩn bị hồ sơ cá nhân.</li>
+                <li>Chứng minh tài chính và lý do du lịch.</li>
+                <li>Chờ xét duyệt từ 7-10 ngày làm việc.</li>
+            </ul>
+        </div>
+
+        <!-- Japan -->
+        <div class="country-card">
+            <img src="img/nhatban.jpg" alt="Nhật Bản">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Nhật Bản Flag">
+            <h3>Nhật Bản</h3>
+            <p>Nhật Bản là điểm đến hấp dẫn với các bước làm visa:</p>
+            <ul>
+                <li>Điền mẫu đơn xin visa Nhật Bản.</li>
+                <li>Chuẩn bị hồ sơ cá nhân và ảnh thẻ.</li>
+                <li>Chứng minh tài chính và kế hoạch du lịch chi tiết.</li>
+                <li>Chờ kết quả trong 5-7 ngày.</li>
+            </ul>
+        </div>
+
+        <!-- Australia -->
+        <div class="country-card">
+            <img src="img/úc.jpg" alt="Úc">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg" alt="Úc Flag">
+            <h3>Úc</h3>
+            <p>Visa Úc bao gồm các bước sau:</p>
+            <ul>
+                <li>Hoàn thành đơn visa điện tử.</li>
+                <li>Chuẩn bị hồ sơ cá nhân.</li>
+                <li>Nộp các tài liệu chứng minh tài chính.</li>
+                <li>Thời gian xử lý từ 10-15 ngày.</li>
+            </ul>
+        </div>
+
+        <!-- USA -->
+        <div class="country-card">
+            <img src="img/mỹ.jpg" alt="Mỹ">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Mỹ Flag">
+            <h3>Mỹ</h3>
+            <p>Visa Mỹ yêu cầu quy trình chi tiết:</p>
+            <ul>
+                <li>Điền đơn DS-160 trực tuyến.</li>
+                <li>Chuẩn bị hồ sơ cá nhân và ảnh thẻ.</li>
+                <li>Chứng minh tài chính và lý do du lịch.</li>
+                <li>Phỏng vấn tại đại sứ quán.</li>
+            </ul>
+        </div>
+
+        <!-- Canada -->
+        <div class="country-card">
+            <img src="img/tuong-chua.jpg" alt="Canada">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada Flag">
+            <h3>Canada</h3>
+            <p>Visa Canada có các bước sau:</p>
+            <ul>
+                <li>Hoàn thành đơn visa online.</li>
+                <li>Nộp hộ chiếu và ảnh thẻ.</li>
+                <li>Chứng minh tài chính và lý do du lịch.</li>
+                <li>Thời gian xử lý từ 15-20 ngày.</li>
+            </ul>
+        </div>
+
+        <!-- France -->
+        <div class="country-card">
+            <img src="img/pháp.jpg" alt="Pháp">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="Pháp Flag">
+            <h3>Pháp</h3>
+            <p>Visa Pháp yêu cầu các thủ tục:</p>
+            <ul>
+                <li>Hoàn thành đơn xin visa Schengen.</li>
+                <li>Chuẩn bị hồ sơ cá nhân và vé máy bay.</li>
+                <li>Cung cấp bằng chứng đặt phòng khách sạn.</li>
+                <li>Thời gian xử lý từ 10-12 ngày.</li>
+            </ul>
+        </div>
+    </div
